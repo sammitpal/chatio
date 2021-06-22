@@ -1,0 +1,56 @@
+.chatWindow{
+    background-color: #1c1c1c;
+    height: 80vh;
+    width: 40vw;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.chatWindow_header{
+    color: white;
+    border-bottom: 1px solid #6e6e6e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chatWindow_Body{
+    flex: 1;
+    overflow: scroll;
+}
+.chatWindow_Body::-webkit-scrollbar{
+    display: none;
+}
+.chatWindow_footer{
+    display: flex;
+    align-items: center;
+}
+.chatWindow_footer > .inputBar{
+    flex: 1;
+    background-color: #3c3c3c;
+    border-radius: 9999px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+.inputBar > input{
+    background-color: transparent;
+    flex: 1;
+    border: none;
+    color: white;
+}
+.inputBar > input::placeholder{
+    color: #d4d4d4;
+}
+.inputBar > input:focus{
+    outline: none;
+}
+.inputBar > .sendIcon{
+    color: white !important;
+}
+.icons{
+    color: white !important;
+    cursor: pointer;
+}
